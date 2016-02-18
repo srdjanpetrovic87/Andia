@@ -7,25 +7,70 @@ h1,h2,h3,h4,h5,h6 {
   max-width: 1200px;
 }
 
-/*typohraphy*/
-h2.page-heading {
+body {
+  padding-bottom: 400px;
+}
+
+/*typography*/
+h2 {
   font-family: 'Lobster', Helvetica, Arial, sans-serif;
   font-size: 24px;
-  font-weight: 700;
   line-height: 24px;
+  font-weight: 700;
   color: #5d5d5d;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .7);
 }
-h2.page-heading small {
-  font-family: Helvetica, Arial, sans-serif;
+h2 small {
+  font-family: 'Open sans', Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
+  font-weight: normal;
   font-style: italic;
 }
-h2.page-heading i.fa {
+h2 strong {
+  color: #9d426b;
+}
+h2 i {
   font-size: 36px;
   padding-right: 20px;
   color: #aaa;
+}
+h2.homepage-heading {
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+}
+h2.homepage-heading small {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+}
+.heading-box {
+  background: url("../images/line.png") repeat-x 0 50%;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+h3 {
+  font-family: 'Lobster', Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #5d5d5d;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .7);
+  display: inline-block;
+  padding: 0 15px;
+  background: #fff;
+}
+h4 {
+  font-family: 'Open sans', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+p {
+  font-family: 'Open sans', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 28px;
 }
 
 /* header */
@@ -90,6 +135,7 @@ header .navbar-default .navbar-nav > li > a:focus > i.fa {
 
 
 /* homepage slider */
+
 .homepage-slider {
   background: url("../images/pattern.jpg");
   padding: 40px 0 0 0;
@@ -98,11 +144,120 @@ header .navbar-default .navbar-nav > li > a:focus > i.fa {
   box-shadow: inset 0px -6px 5px -2px rgba(0,0,0,0.1), inset 0px 6px 5px -2px rgba(0,0,0,0.1);
 }
 
-/* page intro */
+
+/* homepage intro and page intro */
+
+.homepage-intro {
+  padding: 40px 0;
+  background: #fff;
+}
 .page-intro {
   padding: 40px 0;
   background: url("../images/pattern.jpg");
   -webkit-box-shadow: inset 0px -6px 5px -2px rgba(0,0,0,0.1), inset 0px 6px 5px -2px rgba(0,0,0,0.1);
   -moz-box-shadow: inset 0px -6px 5px -2px rgba(0,0,0,0.1), inset 0px 6px 5px -2px rgba(0,0,0,0.1);
   box-shadow: inset 0px -6px 5px -2px rgba(0,0,0,0.1), inset 0px 6px 5px -2px rgba(0,0,0,0.1);
+}
+
+
+/* our-services box */
+
+.our-services ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} 
+.service {
+  margin: 0 0 30px 0;
+  padding: 20px 0;
+  background: url("../images/pattern.jpg");
+  border-bottom: 2px solid #9d426b;
+}
+.service:hover {
+  -webkit-box-shadow: inset 6px 6px 8px -3px rgba(0,0,0,0.2), inset -6px -6px 8px -3px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 6px 6px 8px -3px rgba(0,0,0,0.2), inset -6px -6px 8px -3px rgba(0,0,0,0.2);
+  box-shadow: inset 6px 6px 8px -3px rgba(0,0,0,0.2), inset -6px -6px 8px -3px rgba(0,0,0,0.2);
+}
+.service i {
+  display: block;
+  font-size: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #5d5d5d;
+}
+.service h4 {
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.service p {
+  font-size: 12px;
+  text-align: center;
+}
+.service .read-more {
+  display: block;
+  box-sizing: border-box;
+  width: 100px;
+  height: 30px;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 30px;
+  margin: 0 auto;
+  background: #9d426b;
+  color: #fff;
+  text-align: center;
+}
+.service .read-more:hover {
+  text-decoration: none;
+}
+
+
+/* our-services box */
+
+.our-work ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} 
+.work {
+  padding: 20px 0;
+  margin: 0 0 30px 0;
+  background: url("../images/pattern.jpg");
+  border-bottom: 2px solid #9d426b;
+}
+.work:hover {
+  -webkit-box-shadow: inset 6px 6px 8px -3px rgba(0,0,0,0.2), inset -6px -6px 8px -3px rgba(0,0,0,0.2);
+  -moz-box-shadow: inset 6px 6px 8px -3px rgba(0,0,0,0.2), inset -6px -6px 8px -3px rgba(0,0,0,0.2);
+  box-shadow: inset 6px 6px 8px -3px rgba(0,0,0,0.2), inset -6px -6px 8px -3px rgba(0,0,0,0.2);
+}
+.work h4 {
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+.work p {
+  font-size: 12px;
+  text-align: center;
+}
+.work .social {
+  display: block;
+  text-align: center;
+}
+.work .social > a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  background: #9d426b;
+  color: #fff;
+  -moz-transition: .65s;
+  -webkit-transition: .65s;
+  transition: .65s;
+}
+.work .social > a:hover {
+  background: #5d5d5d;
 }
