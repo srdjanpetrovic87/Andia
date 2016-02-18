@@ -5,6 +5,7 @@
   <title>Andia agency Bootstrap template</title>
   <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="stylesheets/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheets/flexslider.css">
   <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body>
@@ -38,9 +39,43 @@
     </nav>
   </header>
 
+  <div class="homepage-slider">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="flexslider">
+            <ul class="slides">
+              <li data-thumb="images/slider/1.jpg">
+                <img src="images/slider/1.jpg">
+              </li>
+              <li data-thumb="images/slider/2.jpg">
+                <img src="images/slider/2.jpg">
+              </li>
+              <li data-thumb="images/slider/5.jpg">
+                <img src="images/slider/5.jpg">
+              </li>
+              <li data-thumb="images/slider/6.jpg">
+                <img src="images/slider/6.jpg">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script src="javascripts/jquery-1.12.0.min.js"></script>
   <script src="javascripts/bootstrap.min.js"></script>
+  <script src="javascripts/jquery.flexslider-min.js"></script>
   <script src="javascripts/app.js"></script>
+  <script>
+    $(window).load(function() {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails"
+      });
+    });
+  </script>
 </body>
 </html>
